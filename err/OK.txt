@@ -1,0 +1,13 @@
+
+Tanggal : 15/04/2020-17:39:54
+---------------------------------
+PBO_18126/tugas_3.1.py
+PBO_18130/tugas1_18130.py
+PBO_18130/tugas_31.py
+PBO_18136/tugas1_18136.py
+PBO_18136/tugas2_18136.py
+PBO_18136/Tugas3_dictionary.py
+PBO_18142/tugas2_3.1.py
+PBO_19188/Tugas_3.1.py
+PBO_19188/Tugas_3.2.py
+PBO/PBO_18142/tugas2_3.1.py
