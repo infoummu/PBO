@@ -1,0 +1,256 @@
+I"�U<h3 id="about-this-web-">About this web :</h3>
+<hr />
+
+<!-- # Informatika UMMU
+# Universitas Muhammadiyah Maluku Utara
+# Ternate.
+
+
+>
+
+	Address: Jl. K.H. Ahmad Dahlan NO. 100 Kel. SASA, KOTA TERNATE PROVINSI MALUKU UTARA
+	Phone: (0921) 326136
+	Province: North Maluku
+	Kode Pos: 97712
+	Telepon: 0921-3123979
+	Faximile: 0921-3123979
+	Email: ummuternate@gmail.com
+	Website: www.ummu.ac.id
+
+
+***
+
+#### [[ Website ini sifatnya Unofficial dari Prodi Informatika UMMU Ternate ]]
+==================================================================
+-->
+<h1 id="pyshark">pyshark</h1>
+
+<p><a href="https://gitter.im/pyshark_gitter/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/pyshark_gitter/Lobby.svg" alt="Join the chat at https://gitter.im/pyshark_gitter/Lobby" /></a> <a href="https://travis-ci.org/KimiNewt/pyshark"><img src="https://travis-ci.org/KimiNewt/pyshark.svg" alt="Build Status" /></a></p>
+
+<p>Python wrapper for tshark, allowing python packet parsing using wireshark dissectors.</p>
+
+<p>Extended documentation: http://kiminewt.github.io/pyshark</p>
+
+<p><strong>Python2 deprecation</strong> - This package no longer supports Python2. If you wish to still use it in Python2, you can:</p>
+<ul>
+  <li>Use version 0.3.8</li>
+  <li>Install pyshark-legacy via pypi</li>
+  <li>Clone the pyshark-legacy [repo (https://github.com/KimiNewt/pyshark-legacy)], where bugfixes will be applied.</li>
+</ul>
+
+<p><strong>Looking for contributors</strong> - for various reasons I have a hard time finding time to maintain and enhance the package at the moment. Any pull-requests will be reviewed and if any one is interested and is suitable, I will be happy to include them in the project. Feel free to mail me at dorgreen1 at gmail.</p>
+
+<p>There are quite a few python packet parsing modules, this one is different because it doesn’t actually parse any packets, it simply uses tshark’s (wireshark command-line utility) ability to export XMLs to use its parsing.</p>
+
+<p>This package allows parsing from a capture file or a live capture, using all wireshark dissectors you have installed.
+Tested on windows/linux.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="all-platforms">All Platforms</h3>
+<p>Simply run the following to install the latest from pypi</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyshark
+</code></pre></div></div>
+
+<p>Or install from the git repository:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/KimiNewt/pyshark.git
+<span class="nb">cd </span>pyshark/src
+python setup.py <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="mac-os-x">Mac OS X</h3>
+<p>You may have to install libxml which can be unexpected.  If you receive an error from clang or an error message about libxml, run the following:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xcode-select <span class="nt">--install</span>
+pip <span class="nb">install </span>libxml
+</code></pre></div></div>
+<p>You will probably have to accept a EULA for XCode so be ready to click an “Accept” dialog in the GUI.</p>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="reading-from-a-capture-file">Reading from a capture file:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">pyshark</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">cap</span> <span class="o">=</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">FileCapture</span><span class="p">(</span><span class="s">'/tmp/mycapture.cap'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">cap</span>
+<span class="o">&lt;</span><span class="n">FileCapture</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">mycapture</span><span class="p">.</span><span class="n">cap</span> <span class="p">(</span><span class="mi">589</span> <span class="n">packets</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">cap</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Packet</span> <span class="p">(</span><span class="n">Length</span><span class="p">:</span> <span class="mi">698</span><span class="p">)</span>
+<span class="n">Layer</span> <span class="n">ETH</span><span class="p">:</span>
+        <span class="n">Destination</span><span class="p">:</span> <span class="n">BLANKED</span>
+        <span class="n">Source</span><span class="p">:</span> <span class="n">BLANKED</span>
+        <span class="n">Type</span><span class="p">:</span> <span class="n">IP</span> <span class="p">(</span><span class="mh">0x0800</span><span class="p">)</span>
+<span class="n">Layer</span> <span class="n">IP</span><span class="p">:</span>
+        <span class="n">Version</span><span class="p">:</span> <span class="mi">4</span>
+        <span class="n">Header</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">20</span> <span class="nb">bytes</span>
+        <span class="n">Differentiated</span> <span class="n">Services</span> <span class="n">Field</span><span class="p">:</span> <span class="mh">0x00</span> <span class="p">(</span><span class="n">DSCP</span> <span class="mh">0x00</span><span class="p">:</span> <span class="n">Default</span><span class="p">;</span> <span class="n">ECN</span><span class="p">:</span> <span class="mh">0x00</span><span class="p">:</span> <span class="n">Not</span><span class="o">-</span><span class="n">ECT</span> <span class="p">(</span><span class="n">Not</span> <span class="n">ECN</span><span class="o">-</span><span class="n">Capable</span> <span class="n">Transport</span><span class="p">))</span>
+        <span class="n">Total</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">684</span>
+        <span class="n">Identification</span><span class="p">:</span> <span class="mh">0x254f</span> <span class="p">(</span><span class="mi">9551</span><span class="p">)</span>
+        <span class="n">Flags</span><span class="p">:</span> <span class="mh">0x00</span>
+        <span class="n">Fragment</span> <span class="n">offset</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="n">Time</span> <span class="n">to</span> <span class="n">live</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="n">Protocol</span><span class="p">:</span> <span class="n">UDP</span> <span class="p">(</span><span class="mi">17</span><span class="p">)</span>
+        <span class="n">Header</span> <span class="n">checksum</span><span class="p">:</span> <span class="mh">0xe148</span> <span class="p">[</span><span class="n">correct</span><span class="p">]</span>
+        <span class="n">Source</span><span class="p">:</span> <span class="n">BLANKED</span>
+        <span class="n">Destination</span><span class="p">:</span> <span class="n">BLANKED</span>
+  <span class="p">...</span>
+</code></pre></div></div>
+
+<h4 id="other-options">Other options</h4>
+
+<ul>
+  <li><strong>param keep_packets</strong>: Whether to keep packets after reading them via next().
+Used to conserve memory when reading large caps.</li>
+  <li><strong>param input_file</strong>: Either a path or a file-like object containing either a
+packet capture file (PCAP, PCAP-NG..) or a TShark xml.</li>
+  <li><strong>param display_filter</strong>: A display (wireshark) filter to apply on the cap
+before reading it.</li>
+  <li><strong>param only_summaries</strong>: Only produce packet summaries, much faster but includes
+very little information</li>
+  <li><strong>param disable_protocol</strong>: Disable detection of a protocol (tshark &gt; version 2)</li>
+  <li><strong>param decryption_key</strong>: Key used to encrypt and decrypt captured traffic.</li>
+  <li><strong>param encryption_type</strong>: Standard of encryption used in captured traffic (must
+be either ‘WEP’, ‘WPA-PWD’, or ‘WPA-PWK’. Defaults to WPA-PWK.</li>
+  <li><strong>param tshark_path</strong>: Path of the tshark binary</li>
+</ul>
+
+<h3 id="reading-from-a-live-interface">Reading from a live interface:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span> <span class="o">=</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">LiveCapture</span><span class="p">(</span><span class="n">interface</span><span class="o">=</span><span class="s">'eth0'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span><span class="p">.</span><span class="n">sniff</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span>
+<span class="o">&lt;</span><span class="n">LiveCapture</span> <span class="p">(</span><span class="mi">5</span> <span class="n">packets</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">&lt;</span><span class="n">UDP</span><span class="o">/</span><span class="n">HTTP</span> <span class="n">Packet</span><span class="o">&gt;</span>
+
+<span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">capture</span><span class="p">.</span><span class="n">sniff_continuously</span><span class="p">(</span><span class="n">packet_count</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">'Just arrived:'</span><span class="p">,</span> <span class="n">packet</span>
+</code></pre></div></div>
+
+<h4 id="other-options-1">Other options</h4>
+
+<ul>
+  <li><strong>param interface</strong>: Name of the interface to sniff on. If not given, takes
+the first available.</li>
+  <li><strong>param bpf_filter</strong>: BPF filter to use on packets.</li>
+  <li><strong>param display_filter</strong>: Display (wireshark) filter to use.</li>
+  <li><strong>param only_summaries</strong>: Only produce packet summaries, much faster but
+includes very little information</li>
+  <li><strong>param disable_protocol</strong>: Disable detection of a protocol (tshark &gt; version 2)</li>
+  <li><strong>param decryption_key</strong>: Key used to encrypt and decrypt captured traffic.</li>
+  <li><strong>param encryption_type</strong>: Standard of encryption used in captured traffic
+(must be either ‘WEP’, ‘WPA-PWD’, or ‘WPA-PWK’. Defaults to WPA-PWK).</li>
+  <li><strong>param tshark_path</strong>: Path of the tshark binary</li>
+  <li><strong>param output_file</strong>: Additionally save captured packets to this file.</li>
+</ul>
+
+<h3 id="reading-from-a-live-interface-using-a-ring-buffer">Reading from a live interface using a ring buffer</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span> <span class="o">=</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">LiveRingCapture</span><span class="p">(</span><span class="n">interface</span><span class="o">=</span><span class="s">'eth0'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span><span class="p">.</span><span class="n">sniff</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span>
+<span class="o">&lt;</span><span class="n">LiveCapture</span> <span class="p">(</span><span class="mi">5</span> <span class="n">packets</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">&lt;</span><span class="n">UDP</span><span class="o">/</span><span class="n">HTTP</span> <span class="n">Packet</span><span class="o">&gt;</span>
+
+<span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">capture</span><span class="p">.</span><span class="n">sniff_continuously</span><span class="p">(</span><span class="n">packet_count</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span> <span class="s">'Just arrived:'</span><span class="p">,</span> <span class="n">packet</span>
+</code></pre></div></div>
+
+<h4 id="other-options-2">Other options</h4>
+<ul>
+  <li><strong>param ring_file_size</strong>: Size of the ring file in kB, default is 1024</li>
+  <li><strong>param num_ring_files</strong>: Number of ring files to keep, default is 1</li>
+  <li><strong>param ring_file_name</strong>: Name of the ring file, default is /tmp/pyshark.pcap</li>
+  <li><strong>param interface</strong>: Name of the interface to sniff on. If not given, takes
+the first available.</li>
+  <li><strong>param bpf_filter</strong>: BPF filter to use on packets.</li>
+  <li><strong>param display_filter</strong>: Display (wireshark) filter to use.</li>
+  <li><strong>param only_summaries</strong>: Only produce packet summaries, much faster but
+includes very little information</li>
+  <li><strong>param disable_protocol</strong>: Disable detection of a protocol (tshark &gt; version 2)</li>
+  <li><strong>param decryption_key</strong>: Key used to encrypt and decrypt captured traffic.</li>
+  <li><strong>param encryption_type</strong>: Standard of encryption used in captured traffic
+(must be either ‘WEP’, ‘WPA-PWD’, or ‘WPA-PWK’. Defaults to WPA-PWK).</li>
+  <li><strong>param tshark_path</strong>: Path of the tshark binary</li>
+  <li><strong>param output_file</strong>: Additionally save captured packets to this file.</li>
+</ul>
+
+<h3 id="reading-from-a-live-remote-interface">Reading from a live remote interface:</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span> <span class="o">=</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">RemoteCapture</span><span class="p">(</span><span class="s">'192.168.1.101'</span><span class="p">,</span> <span class="s">'eth0'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span><span class="p">.</span><span class="n">sniff</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">capture</span>
+</code></pre></div></div>
+
+<h4 id="other-options-3">Other options</h4>
+
+<ul>
+  <li><strong>param remote_host</strong>: The remote host to capture on (IP or hostname).
+Should be running rpcapd.</li>
+  <li><strong>param remote_interface</strong>: The remote interface on the remote machine to
+capture on. Note that on windows it is not the device display name but the
+true interface name (i.e. \Device\NPF_..).</li>
+  <li><strong>param remote_port</strong>: The remote port the rpcapd service is listening on</li>
+  <li><strong>param bpf_filter</strong>: A BPF (tcpdump) filter to apply on the cap before
+reading.</li>
+  <li><strong>param only_summaries</strong>: Only produce packet summaries, much faster but
+includes very little information</li>
+  <li><strong>param disable_protocol</strong>: Disable detection of a protocol (tshark &gt; version 2)</li>
+  <li><strong>param decryption_key</strong>: Key used to encrypt and decrypt captured traffic.</li>
+  <li><strong>param encryption_type</strong>: Standard of encryption used in captured traffic
+(must be either ‘WEP’, ‘WPA-PWD’, or ‘WPA-PWK’. Defaults to WPA-PWK).</li>
+  <li><strong>param tshark_path</strong>: Path of the tshark binary</li>
+</ul>
+
+<h3 id="accessing-packet-data">Accessing packet data:</h3>
+
+<p>Data can be accessed in multiple ways.
+Packets are divided into layers, first you have to reach the appropriate layer and then you can select your field.</p>
+
+<p>All of the following work:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">packet</span><span class="p">[</span><span class="s">'ip'</span><span class="p">].</span><span class="n">dst</span>
+<span class="mf">192.168</span><span class="p">.</span><span class="mf">0.1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">packet</span><span class="p">.</span><span class="n">ip</span><span class="p">.</span><span class="n">src</span>
+<span class="mf">192.168</span><span class="p">.</span><span class="mf">0.100</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">packet</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">src</span>
+<span class="mf">192.168</span><span class="p">.</span><span class="mf">0.100</span>
+</code></pre></div></div>
+
+<p>To test whether a layer is in a packet, you can use its name:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'IP'</span> <span class="ow">in</span> <span class="n">packet</span>
+<span class="bp">True</span>
+</code></pre></div></div>
+
+<p>To see all possible field names, use the <code class="language-plaintext highlighter-rouge">packet.layer.field_names</code> attribute (i.e. <code class="language-plaintext highlighter-rouge">packet.ip.field_names</code>) or the autocomplete function on your interpreter.</p>
+
+<p>You can also get the original binary data of a field, or a pretty description of it:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">ip</span><span class="p">.</span><span class="n">addr</span><span class="p">.</span><span class="n">showname</span>
+<span class="n">Source</span> <span class="ow">or</span> <span class="n">Destination</span> <span class="n">Address</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">.</span><span class="mf">0.10</span> <span class="p">(</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">0.10</span><span class="p">)</span>
+<span class="c1"># And some new attributes as well:
+</span><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">ip</span><span class="p">.</span><span class="n">addr</span><span class="p">.</span><span class="n">int_value</span>
+<span class="mi">167772170</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">p</span><span class="p">.</span><span class="n">ip</span><span class="p">.</span><span class="n">addr</span><span class="p">.</span><span class="n">binary_value</span>
+<span class="s">'</span><span class="se">\n\x00\x00\n</span><span class="s">'</span>
+</code></pre></div></div>
+
+<h3 id="decrypting-packet-captures">Decrypting packet captures</h3>
+
+<p>Pyshark supports automatic decryption of traces using the WEP, WPA-PWD, and WPA-PSK standards (WPA-PWD is the default).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">cap1</span> <span class="o">=</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">FileCapture</span><span class="p">(</span><span class="s">'/tmp/capture1.cap'</span><span class="p">,</span> <span class="n">decryption_key</span><span class="o">=</span><span class="s">'password'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">cap2</span> <span class="o">=</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">LiveCapture</span><span class="p">(</span><span class="n">interface</span><span class="o">=</span><span class="s">'wi0'</span><span class="p">,</span> <span class="n">decryption_key</span><span class="o">=</span><span class="s">'password'</span><span class="p">,</span> <span class="n">encryption_type</span><span class="o">=</span><span class="s">'wpa-psk'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>A tuple of supported encryption standards, SUPPORTED_ENCRYPTION_STANDARDS,
+exists in each capture class.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">FileCapture</span><span class="p">.</span><span class="n">SUPPORTED_ENCRYPTION_STANDARDS</span>
+<span class="p">(</span><span class="s">'wep'</span><span class="p">,</span> <span class="s">'wpa-pwd'</span><span class="p">,</span> <span class="s">'wpa-psk'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">pyshark</span><span class="p">.</span><span class="n">LiveCapture</span><span class="p">.</span><span class="n">SUPPORTED_ENCRYPTION_STANDARDS</span>
+<span class="p">(</span><span class="s">'wep'</span><span class="p">,</span> <span class="s">'wpa-pwd'</span><span class="p">,</span> <span class="s">'wpa-psk'</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="license">License</h2>
+<p>This project is licensed under MIT. Contributions to this project are accepted under the same license.</p>
+:ET

@@ -1,0 +1,256 @@
+I"�<ul>
+  <li>Daftar Nama2 yang mengumpulkan hasil praktikum ke dropbox, daftar nama2 ini akan selalu di update…</li>
+  <li>Hasil Test terhadap script yang dikirim ke dropbox, hasil test script banyak yang sudah <code class="language-plaintext highlighter-rouge">OK</code>, tapi masih ada yang <code class="language-plaintext highlighter-rouge">Error</code>.</li>
+</ul>
+
+<h3 id="nama2-dan-akun-dropbox">Nama2 dan Akun Dropbox</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>NPM</th>
+      <th>Dropbox_Akun</th>
+      <th>Nama_Mahasiswa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>17008</td>
+      <td>kasmilpapaliaa@gmail.com</td>
+      <td>KASMIL PAPALIA (Info1)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>17040</td>
+      <td>irawatiikmal@gmail.com</td>
+      <td>IRAWATI IKMAL (Info1)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>17009</td>
+      <td>gunawanhasim19@gmail.com</td>
+      <td>GUNAWAN HASIM (Info1)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>17054</td>
+      <td>Yadin376@gmail.com</td>
+      <td>SUPRIYADIN HIDAYAT (Info2)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>17027</td>
+      <td>muhajirakbar017@gmail.com</td>
+      <td>MUHAJJIR AKBAR SADEK (Info1)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>17010</td>
+      <td>safaalfatani115@gmail.com</td>
+      <td>MUHLIS JAMIL (Info1)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>16145</td>
+      <td>Nurmilanhamzahrajak@gmail.com</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>16059</td>
+      <td>mhmmdfadel08@gmail.com</td>
+      <td>FADEL MUHAMMAD (Info2)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>17051</td>
+      <td>fajrinalolinga09@gmail.com</td>
+      <td>FAJRIANI A LOLINGA (Info2)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>17141</td>
+      <td>nurfitrasaridjoge@gmail.com</td>
+      <td>NURFITRASARI MIAGINA M DJOGE (Info2)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>17164</td>
+      <td>Darmantolumbessy12@gmail.com</td>
+      <td>DARMANTO LUMBESSY (Info2)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>17071</td>
+      <td>irfianasafitri071@gmail.com</td>
+      <td>IRFIANA SAFITRI (Info2)</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>17015</td>
+      <td>ijuandriidrus@gmail.com</td>
+      <td>IJUANDRI IDRUS ABDURAHMAN (Info1)</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>17134</td>
+      <td>armanebit98@gmail.com</td>
+      <td>ARMAN EBIT (Info2)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>17056</td>
+      <td>lauraevita07@gmail.com</td>
+      <td>LAURA EVITA DISINI (Info2)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>17154</td>
+      <td>rhizkyfadel@gmail.com</td>
+      <td>M RIZKY FADEL (Info2)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>17077</td>
+      <td>qotimatulmahmudaa28@gmail.com</td>
+      <td>QOTIMATUL MAHMUDA A (Info2)</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>17066</td>
+      <td>eghaariska@gmail.com</td>
+      <td>ARISKA ABD KADIR (Info2)</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>17057</td>
+      <td>dhodyrifaldyjr@gmail.com</td>
+      <td>DHODY RIFALDI BAFOTE (Info2)</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>17121</td>
+      <td>mrifailaidi3@gmail.com</td>
+      <td>M RIFAI LAIDI (Info2)</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>17154</td>
+      <td>rhizkyfadel@gmail.com</td>
+      <td>M RIZKY FADEL (Info2)</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>17062</td>
+      <td>nursalimaishak@gmail.com</td>
+      <td>NURSALIMA ISHAK (Info2)</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>17096</td>
+      <td>Aispugaa@gmail.com</td>
+      <td>ABDUL FARIS HI ISMAIL (Info2)</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>20076</td>
+      <td>inadraw.amusu@gmail.com</td>
+      <td>MAZHRUR RAHMAN KUSUMA WARDANI (Info1)</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>17098</td>
+      <td>ridhoishak628@gmail.com</td>
+      <td>HARIDA ISHAK (Info2)</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>17025</td>
+      <td>muhammadzakri08@gmail.com</td>
+      <td>MUHAMMAD ZAKRI NURDIN (Info1)</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>17167</td>
+      <td>riksanridwan77@gmail.com</td>
+      <td>RIKSAN RIDWAN (Info1)</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>17168</td>
+      <td>iksanzkimsan@gmail.com</td>
+      <td>IKSAN ANSAR (Info2)</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>17119</td>
+      <td>yholcki@gmail.com</td>
+      <td>YOLKI HARSONO (Info1)</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>17076</td>
+      <td>maulanamulex34@gmail.com</td>
+      <td>MAULANA (Info2)</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>17037</td>
+      <td>faisalidwar25@gmail.com</td>
+      <td>FAISAL IDWAR (Info1)</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>17043</td>
+      <td>lasmanhusain@gmail.com</td>
+      <td>LASMAN A HUSAIN (Info2)</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>17006</td>
+      <td>sukurmasiana@gmail.com</td>
+      <td>SUKUR MASIANA (Info1)</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>17137</td>
+      <td>rahmatarsad1@gmail.com</td>
+      <td>RAHMAT ARSAD (Info1)</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>17115</td>
+      <td>Dirgaqlovaa@gmail.com</td>
+      <td>DIRGA RISNO (Info2)</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>17041</td>
+      <td>mujahidmumen@gmail.com</td>
+      <td>MUJAHID (Info2)</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>17058</td>
+      <td>gilangpratamamalagapi@gmail.com</td>
+      <td>GILANG PRATAMA MALAGAPI (Info2)</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>16045</td>
+      <td>-</td>
+      <td>M ASWAD SAMAD (Info2)</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>16009</td>
+      <td>-</td>
+      <td>ANGGA MASRI SM KOROY (Info1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+:ET
