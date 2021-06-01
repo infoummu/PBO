@@ -1,35 +1,48 @@
----
-title: Kuliah PBO Info 4 dan 5
-published: true
----
+I"”<h2 id="pertemuan-tujuh-07-">PERTEMUAN TUJUH 07 :</h2>
 
-## PERTEMUAN TUJUH 07 :
+<table>
+  <tbody>
+    <tr>
+      <td>Status</td>
+      <td>: Online</td>
+    </tr>
+    <tr>
+      <td>Waktu</td>
+      <td>: 31/05/2021</td>
+    </tr>
+    <tr>
+      <td>Tema</td>
+      <td>: Pertemuan 7 PBO - LIST, TUPLE DAN SET</td>
+    </tr>
+  </tbody>
+</table>
 
-|Status   | : Online                      |
-|Waktu    | : 31/05/2021                 |
-|Tema     | : Pertemuan 7 PBO - LIST, TUPLE DAN SET |
+<p>Kerjakan praktikum bersama teman2 lebih bagus sehingga bisa bertanya atau berdiskusi materi atau bagian yang tidak dipahami ke teman belajarnya !.</p>
 
+<h3 id="tugas-pengganti-pertemuan-ke-7">Tugas Pengganti PERTEMUAN KE-7</h3>
 
-Kerjakan praktikum bersama teman2 lebih bagus sehingga bisa bertanya atau berdiskusi materi atau bagian yang tidak dipahami ke teman belajarnya !.
+<ol>
+  <li>
+    <p>Silahkan Baca Materi di <code class="language-plaintext highlighter-rouge">MODUL</code> dan KERJAKAN Praktikum IV dengan TEMA <code class="language-plaintext highlighter-rouge">LIST, TUPLE DAN SET</code> yang ada di <code class="language-plaintext highlighter-rouge">MODUL</code></p>
+  </li>
+  <li>
+    <p>Tulis kembali code yang terdapat di modul dan simpan sesuai dengan nama yang ada di modul, (contoh : <code class="language-plaintext highlighter-rouge">Latihan_4.1.list1.py</code> dan seterusnya) - (usahakan nama file jangan mengandung SPASI).</p>
+  </li>
+  <li>
+    <p>Setelah code ditulis, silahkan jalankan untuk di test, lakukan untuk semua dari code <code class="language-plaintext highlighter-rouge">Latihan_4.1.list1.py</code> sampai code <code class="language-plaintext highlighter-rouge">Latihan_4.4.set.py</code>.</p>
+  </li>
+  <li>
+    <p>Setelah Melakukan Test dan berhasil, silahkan kirim ke folder <code class="language-plaintext highlighter-rouge">Box_19000</code> (menyesuaikan NPM) pada akun <code class="language-plaintext highlighter-rouge">dropbox</code> anda masing-masing !.</p>
+  </li>
+  <li>
+    <p>Usahakan Sudah Terkumpul Sebelum Pertemuan Akan datang (paling lambat 05/06/2021).</p>
+  </li>
+  <li>
+    <p>Jika Kurang Paham atau ada yang kurang jelas silahkan bertanya langsung lewat Grub WA person atau di Grupâ€¦</p>
+  </li>
+</ol>
 
-
-### Tugas Pengganti PERTEMUAN KE-7
-
-1. Silahkan Baca Materi di `MODUL` dan KERJAKAN Praktikum IV dengan TEMA `LIST, TUPLE DAN SET` yang ada di `MODUL`
-
-2. Tulis kembali code yang terdapat di modul dan simpan sesuai dengan nama yang ada di modul, (contoh : `Latihan_4.1.list1.py` dan seterusnya) - (usahakan nama file jangan mengandung SPASI).
-
-3. Setelah code ditulis, silahkan jalankan untuk di test, lakukan untuk semua dari code `Latihan_4.1.list1.py` sampai code `Latihan_4.4.set.py`.
-
-4. Setelah Melakukan Test dan berhasil, silahkan kirim ke folder `Box_19000` (menyesuaikan NPM) pada akun `dropbox` anda masing-masing !.
-
-
-5. Usahakan Sudah Terkumpul Sebelum Pertemuan Akan datang (paling lambat 05/06/2021).
-
-6. Jika Kurang Paham atau ada yang kurang jelas silahkan bertanya langsung lewat WA langsung atau di Grup PBO WA...
-
-
-> ....:)
+<pre>
 
 
 
@@ -157,3 +170,5 @@ Silahkan Baca Referensi di link berikut: [referensi](Reff){:target="_blank"}, ca
 
 ***
 By : Ikhwan
+</pre>
+:ET
