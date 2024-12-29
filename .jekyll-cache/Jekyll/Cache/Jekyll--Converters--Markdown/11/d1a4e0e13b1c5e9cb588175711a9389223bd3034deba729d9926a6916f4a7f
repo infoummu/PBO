@@ -1,4 +1,4 @@
-I"¢K<h2 id="praktikum-pbo----uas---info-4--5-">PRAKTIKUM PBO  - UAS - INFO 4 &amp; 5 :</h2>
+I"VP<h2 id="praktikum-pbo----uas---info-4--5-">PRAKTIKUM PBO  - UAS - INFO 4 &amp; 5 :</h2>
 
 <table>
   <tbody>
@@ -84,16 +84,16 @@ dan ketentuannya :</p>
 </span>     <span class="c1"># silahkan ganti dengan data real anda dan teman2 anda
 </span> <span class="n">mhs_pbo_45</span> <span class="o">=</span> <span class="p">{</span>
 
-     <span class="s">'19001'</span><span class="p">:</span><span class="s">'Nama Anda'</span><span class="p">,</span> 
-     <span class="s">'19003'</span><span class="p">:</span><span class="s">'Nama Teman Anda'</span><span class="p">,</span>
-     <span class="s">'19004'</span><span class="p">:</span><span class="s">'Nama Teman Anda 1'</span><span class="p">,</span> 
-     <span class="s">'19007'</span><span class="p">:</span><span class="s">'Nama Teman Anda 2'</span> 
+     <span class="sh">'</span><span class="s">19001</span><span class="sh">'</span><span class="p">:</span><span class="sh">'</span><span class="s">Nama Anda</span><span class="sh">'</span><span class="p">,</span> 
+     <span class="sh">'</span><span class="s">19003</span><span class="sh">'</span><span class="p">:</span><span class="sh">'</span><span class="s">Nama Teman Anda</span><span class="sh">'</span><span class="p">,</span>
+     <span class="sh">'</span><span class="s">19004</span><span class="sh">'</span><span class="p">:</span><span class="sh">'</span><span class="s">Nama Teman Anda 1</span><span class="sh">'</span><span class="p">,</span> 
+     <span class="sh">'</span><span class="s">19007</span><span class="sh">'</span><span class="p">:</span><span class="sh">'</span><span class="s">Nama Teman Anda 2</span><span class="sh">'</span> 
 
  <span class="p">}</span>  <span class="c1"># dan Seterusnya, ( INGAT !, Ikuti Formatnya)
 </span>
  <span class="c1"># Input NPM dari Keyboard
-</span> <span class="n">npm</span>   <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">" Input NPM </span><span class="se">\t</span><span class="s">: "</span><span class="p">)</span>
- <span class="k">print</span><span class="p">(</span> <span class="s">'-'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span>
+</span> <span class="n">npm</span>   <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s"> Input NPM </span><span class="se">\t</span><span class="s">: </span><span class="sh">"</span><span class="p">)</span>
+ <span class="nf">print</span><span class="p">(</span> <span class="sh">'</span><span class="s">-</span><span class="sh">'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span>
 
  <span class="c1">## Periksa "npm", Jika NPM Terdapat dalam DICTIONARY Maka,
 </span> <span class="c1">## Tampilkan Informasi NPM dan Nama Mahasiswa
@@ -104,15 +104,15 @@ dan ketentuannya :</p>
 
 
     
- <span class="k">print</span><span class="p">(</span> <span class="s">'='</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span> <span class="c1">## hanya garis pembatas 
+ <span class="nf">print</span><span class="p">(</span> <span class="sh">'</span><span class="s">=</span><span class="sh">'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span> <span class="c1">## hanya garis pembatas 
 </span> <span class="c1">## batas akhir code untuk soal nomor 1
 </span>
 
  <span class="c1"># CODE untuk SOAL NOMOR 2
 </span> <span class="c1">#-------------------------
 </span> <span class="c1">## Input Nilai dari Keyboard
-</span> <span class="n">nilai</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">" Input Nilai </span><span class="se">\t</span><span class="s">: "</span><span class="p">))</span>
- <span class="k">print</span><span class="p">(</span> <span class="s">'-'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span>
+</span> <span class="n">nilai</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s"> Input Nilai </span><span class="se">\t</span><span class="s">: </span><span class="sh">"</span><span class="p">))</span>
+ <span class="nf">print</span><span class="p">(</span> <span class="sh">'</span><span class="s">-</span><span class="sh">'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span>
 
  <span class="c1">## Periksa "nilai" yang diinput dari keyboard dan, 
 </span> <span class="c1"># Jika nilai &gt;= 80 maka tampilkan infomasi "Nilai A"
@@ -124,7 +124,7 @@ dan ketentuannya :</p>
  <span class="c1">## TULIS CODE NO-2  ANDA DI-BAWAH
 </span>
 
- <span class="k">print</span><span class="p">(</span> <span class="s">'-'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span> <span class="c1">## hanya garis pembatas 
+ <span class="nf">print</span><span class="p">(</span> <span class="sh">'</span><span class="s">-</span><span class="sh">'</span><span class="o">*</span><span class="mi">35</span><span class="p">)</span> <span class="c1">## hanya garis pembatas 
 </span> <span class="c1">## batas akhir code untuk soal nomor 2
 </span></code></pre></div>    </div>
   </li>
@@ -177,7 +177,7 @@ dan ketentuannya :</p>
 </span> <span class="c1">#----------------------------
 </span>
  <span class="c1"># Data List
-</span> <span class="n">data1</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Ikhwan Elyas"</span><span class="p">,</span><span class="s">"19000"</span><span class="p">,</span><span class="s">"Info 0"</span><span class="p">,</span><span class="s">"Informatika"</span><span class="p">,</span><span class="s">"UMMU Ternate"</span><span class="p">]</span>
+</span> <span class="n">data1</span> <span class="o">=</span> <span class="p">[</span><span class="sh">"</span><span class="s">Ikhwan Elyas</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">19000</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">Info 0</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">Informatika</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">UMMU Ternate</span><span class="sh">"</span><span class="p">]</span>
 
 
  <span class="c1"># Cetak List "data1"  per Element
@@ -190,8 +190,8 @@ dan ketentuannya :</p>
 </span>
 
  <span class="c1"># Data SET
-</span> <span class="n">NPM_4</span><span class="o">=</span><span class="p">{</span><span class="s">"19003"</span><span class="p">,</span><span class="s">"19004"</span><span class="p">,</span><span class="s">"19005"</span><span class="p">}</span>
- <span class="n">NPM_5</span><span class="o">=</span><span class="p">{</span><span class="s">"19002"</span><span class="p">,</span><span class="s">"19003"</span><span class="p">,</span><span class="s">"19004"</span><span class="p">}</span>
+</span> <span class="n">NPM_4</span><span class="o">=</span><span class="p">{</span><span class="sh">"</span><span class="s">19003</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">19004</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">19005</span><span class="sh">"</span><span class="p">}</span>
+ <span class="n">NPM_5</span><span class="o">=</span><span class="p">{</span><span class="sh">"</span><span class="s">19002</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">19003</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">19004</span><span class="sh">"</span><span class="p">}</span>
 
 
  <span class="c1"># Cetak Elemen NPM_4 yang beda dari NPM_5
